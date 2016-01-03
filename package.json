@@ -1,0 +1,33 @@
+{
+  "name": "accounts-mongo",
+  "version": "0.0.1",
+  "description": "App accounts on MongoDB",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitica/accounts-mongo-js.git"
+  },
+  "keywords": [
+    "users",
+    "accounts",
+    "mongo",
+    "app-accounts"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mitica/accounts-mongo-js/issues"
+  },
+  "homepage": "https://github.com/Mitica/accounts-mongo-js#readme",
+  "dependencies": {
+    "atonic": "^1.0.4",
+    "bluebird": "^3.1.1",
+    "lodash": "^3.10.1",
+    "mongoose": "^4.3.4",
+    "randomstring": "^1.1.3",
+    "uuid": "^2.0.1"
+  }
+}
