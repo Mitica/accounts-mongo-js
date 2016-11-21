@@ -1,11 +1,9 @@
 'use strict';
 
-if (!process.env.CONNECTION_STRING) {
+if (!process.env.ACCOUNTS_CONNECTION_STRING) {
 	console.log('NO ENV CONNECTION_STRING');
 	module.exports = false;
 	return;
 }
 
-var storage = require('../../lib')(process.env.CONNECTION_STRING);
-
-exports.storage = storage;
+module.exports = require('../../lib/storage')();

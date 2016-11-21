@@ -1,10 +1,13 @@
 {
   "name": "mongo-accounts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "App accounts on MongoDB",
   "main": "./lib/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -R spec -t 8000"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   },
   "repository": {
     "type": "git",

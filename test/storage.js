@@ -16,23 +16,4 @@ describe('storage', function() {
 			assert.equal('Test', app.name);
 		});
 	});
-
-	it('should throw an error', function() {
-		try {
-			storage.apps.create();
-		} catch (e) {
-			assert.ok(e);
-			return;
-		}
-		throw new Error('Error');
-	});
-
-	it('should throw an error invalid data', function() {
-		return storage.apps.create({})
-			.catch(function(error) {
-				assert.ok(error);
-			}).then(function(app) {
-				assert.equal(undefined, app);
-			});
-	});
 });

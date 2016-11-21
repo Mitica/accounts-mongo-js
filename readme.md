@@ -1,8 +1,17 @@
 # mongo-accounts
 
-A MongoDB storage implementation for [accounts](https://github.com/Ournet/node-accounts).
+A MongoDB storage implementation for [accounts](https://github.com/Mitica/node-accounts).
+
+## Usage
+
+```
+var storage = require('mongo-accounts').storage();
+
+var accounts = require('accounts')(storage);
+
+```
 
 Supported envs:
 
-  - MONGO_ACCOUNTS_COLLECTION_PREFIX
-  - MONGO_ACCOUNTS_CONNECTION_STRING
+  - ACCOUNTS_CONNECTION_STRING
+  - ACCOUNTS_COLLECTION_PREFIX
